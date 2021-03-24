@@ -1,0 +1,16 @@
+.noti-item {
+  padding: 0 18px;
+  margin: 0 -15px;
+}
+.noti-item:hover {
+  cursor: pointer;
+  background-color: #ccc !important;
+}
+#noti-popover {
+  position: fixed;
+  .ant-popover-inner-content {
+    max-width: 25rem;
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+}

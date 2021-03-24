@@ -1,0 +1,44 @@
+image: node:latest
+
+stages:
+  - deployAdmin
+  - deploy
+
+cache:
+  paths:
+  - node_modules/
+
+# deployFamilyTest:
+#   only:
+#     - test
+#   stage: deployTest
+#   script:
+#     - npm i
+#     - cat $TEST_FAMILY_CLIENT > .env.production
+#     - npm run build
+#     - rsync -azvhq build/ /home/${DEPLOY_USER}/services/test-family-fe/build --delete
+#     - bash /home/${DEPLOY_USER}/scripts/test-family-fe.sh
+
+deployAdminFamily:
+  only:
+    - admin
+  stage: deployAdmin
+  script:
+    - npm i
+    - cat $FAMILY_ENV > .env.production
+    - printf "\nADMIN_SERVER=true" >> .env.production
+    - npm run build
+    - rsync -azvhq build/ /home/devops/services/family-admin-fe/build --delete
+    - bash /home/devops/scripts/family-admin-fe.sh
+
+deployFamily:
+  only:
+    - master
+  stage: deploy
+  script:
+    - npm i
+    - cat $FAMILY_ENV > .env.production
+    - printf "\nADMIN_SERVER=false" >> .env.production
+    - npm run build
+    - rsync -azvhq build/ /home/devops/services/family-fe/build --delete
+    - bash /home/devops/scripts/family-fe.sh

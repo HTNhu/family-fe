@@ -1,0 +1,31 @@
+.ant-mess {
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+}
+
+.message-list {
+  .ant-card-body {
+    padding: 0 !important;
+    height: 25rem;
+    overflow: hidden;
+    .message-list-container {
+      height: 100%;
+      width: 100%;
+      padding: 0 10px;
+      overflow-y: auto;
+      // padding-bottom: 10px;
+    }
+  }
+  .ant-card-head {
+    padding: 0 10px !important;
+    min-height: 55px;
+  }
+  .ant-card-actions{
+    padding: 0 10px !important;
+  }
+}
+.spin-chat {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,28 @@
+@media (min-width: 601px) {
+  .post {
+    padding: 0 24px !important;
+    .ant-card-head{
+      padding: 0;
+    }
+    .ant-card-body{
+      padding: 24px  0 !important;
+    }
+    .ant-card-head-title {
+      white-space: normal;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .post {
+    padding: 0 12px !important;
+    .ant-card-head{
+      padding: 0;
+    }
+    .ant-card-body{
+      padding: 12px 0 !important;
+    }
+    .ant-card-head-title {
+      white-space: normal;
+    }
+  }
+}

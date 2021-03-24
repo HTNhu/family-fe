@@ -1,0 +1,22 @@
+.conversation-list {
+  // width: 80%;
+  max-height: 85vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 10px;
+  .ant-list-item-meta {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .ant-list-item-meta-description {
+    white-space: nowrap;
+    width: 8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.ant-list-item:hover {
+  cursor: pointer;
+  background-color: rgba(182, 191, 200, 0.5);
+}

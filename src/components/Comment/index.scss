@@ -1,0 +1,63 @@
+.ant-comment-content-detail {
+    border: rgba(199, 224, 240, 0.828) solid 1px;
+    border-radius: 20px;
+    background-color: rgba(199, 224, 240, 0.123);
+    width: fit-content;
+    padding: 0 5px;
+    p{
+        margin-block-end:5px;
+        text-align: left;
+    }
+}
+
+.ant-comment-inner{
+    padding-top: 0;
+    // border-bottom: rgba(199, 224, 240, 0.828) solid 1px;
+    
+}
+.reply{
+    margin-left: 5%;
+}
+.rep-input{
+    margin-left: 5%;
+    .ant-comment-content-detail {
+        width: 100%;
+    }
+}
+
+.ant-comment-content-author{
+    margin-bottom: 0;
+}
+.ant-comment-actions{
+    margin-top: 0;
+}
+.cmt-input {
+    .ant-comment-content-detail {
+        // border:none !important;
+        width: 100%;
+    }
+}
+
+.ant-form-item-control-input-content{
+    display: flex;
+}
+.ant-comment-content{
+    text-align: left;
+    .ant-comment-content-detail {
+        max-width: 100%;
+    }
+}
+.ant-form-item textarea.ant-input{
+    overflow: hidden;
+    border-radius: 20px
+}
+.rep-content {
+    word-break: break-all;
+    a{
+    display: contents !important;
+    color: rgba(15, 90, 228, 0.7) !important;
+    }
+    a:hover{
+        color: rgb(27, 93, 226) !important;
+    }
+}

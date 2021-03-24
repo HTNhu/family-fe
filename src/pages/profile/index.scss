@@ -1,0 +1,45 @@
+.cover-uploader {
+    width: 100%;
+    background-color:  rgba(136, 124, 124, 0.1);
+    // height: 250px;
+
+}
+// .avatar-uploader{
+
+// }
+.icon-uploader{
+    width: 50px;
+    height: 45px;
+    .ant-upload.ant-upload-select-picture-card{
+        width: 50px;
+        background-color: rgba(77, 75, 75, 0.7);
+        height: 50px;
+        
+    }
+}
+.icon-avt-uploader{
+    width: 25px;
+height: 25px;
+.ant-upload.ant-upload-select-picture-card{
+    width: 25px;
+    background-color: rgba(149, 139, 139, 0.1);
+    height: 25px;
+}
+}
+
+// .btn-saveCover, .btn-saveAvt{
+//     opacity: 0;
+// }
+// .cover-uploader:hover .btn-saveCover{
+//     opacity: 1;
+// }
+// .cover-uploader:hover .cover-img{
+//     opacity: 0.3;
+// }
+// .avatar-uploader:hover .btn-saveAvt{
+//     opacity: 1;
+
+// }
+// .avatar-uploader:hover .img-avt{
+//     opacity: 0.3;
+// }

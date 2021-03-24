@@ -1,0 +1,98 @@
+@media (max-width: 600px) {
+  .menu-input {
+    visibility: hidden;
+  }
+}
+.delete-img {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: relative;
+  top: -10%;
+  left: -10%;
+}
+.img-upload:hover > .delete-img {
+  opacity: 1;
+}
+.textMention__highlighter {
+  max-height: 100px;
+}
+.textMention__input {
+  padding-left: 5px;
+  background-color: rgb(251, 251, 251);
+  resize: none;
+  // height: 30px;
+  border-radius: 10px;
+  border: none;
+  &:focus,
+  &:active {
+    outline: none;
+    color: #454647;
+    border: none;
+  }
+  &::placeholder {
+    color: #a4b0be;
+    font-size: 14px;
+  }
+  .textMention--multiLine {
+    line-height: 30px !important;
+    width: 80% !important;
+  }
+  .textMention__suggestions__list {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    max-height: 200px;
+    overflow: auto;
+  }
+  .textMention__suggestions__item {
+    padding: 5px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  .textMention__suggestions__item--focused {
+    background-color: #daf4fa;
+  }
+  textarea.ant-input:hover {
+    /* border: none !important; */
+  }
+  .input-custome {
+    display: flex;
+    background-color: initial;
+    /* border: black solid 1px; */
+    /* border-top: none; */
+    border-radius: 20px;
+    .ant-menu-horizontal > .ant-menu-item {
+      padding-left: 5px;
+      padding-right: 0;
+    }
+  }
+}
+.textMention--multiLine {
+  min-height: 30px;
+  line-height: 25px !important;
+}
+.textMention__suggestions__list {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  max-height: 200px;
+  overflow: auto;
+}
+.textMention__suggestions__item {
+  padding: 5px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.textMention__suggestions__item--focused {
+  background-color: #daf4fa;
+}
+
+.input-custome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background-color: initial;
+  border-radius: 20px;
+  // padding: 5px;
+}
+.popover-fix {
+  position: fixed;
+}
